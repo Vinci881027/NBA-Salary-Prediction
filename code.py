@@ -5,11 +5,7 @@ import sklearn.metrics
 import sklearn.model_selection
 import sklearn.linear_model
 import sklearn.preprocessing
-from sklearn import linear_model
 from sklearn import metrics
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.pipeline import make_pipeline
-from sklearn.datasets import make_regression
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
