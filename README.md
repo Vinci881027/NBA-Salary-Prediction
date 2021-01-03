@@ -1,7 +1,5 @@
 # NBA-Salary-Prediction
 
-# NBA-Salary-Prediction
-
 'POS'：位置
 'AGE',：年紀
 'MIN%'：出賽時間比例

@@ -40,13 +40,19 @@ def train_predict(X_train, X_test, y_train, y_test, precise):
     lr = LinearRegression()
     lr.fit(X_train, y_train)
     y_pred = lr.predict(X_test)
+
+    # score
     print("train score: ", lr.score(X_train, y_train))
     print("test score: ", lr.score(X_test, y_test))
     print("------")
+
+    # loss function
     print('MAE:', metrics.mean_absolute_error(y_test, y_pred))
     print('RMSE:', numpy.sqrt(
         metrics.mean_squared_error(y_test, y_pred)))
     print("------")
+
+    # picture
     for i in range(len(X_train.columns)):
         plt.scatter(X_train.iloc[:, i], y_train['SALARY'], label='train')
         plt.scatter(X_test.iloc[:, i], y_test['SALARY'],
@@ -78,10 +84,12 @@ def main(argv):
     X_train, X_test, y_train, y_test = load_train_test_data(train_ratio=.7)
     X_train_precise, X_test_precise, y_train_precise, y_test_precise = load_precise_train_test_data(
         train_ratio=.7)
+
     # using precise data
     lr = train_predict(X_train, X_test, y_train, y_test, precise=False)
     lr = train_predict(X_train_precise, X_test_precise,
                        y_train_precise, y_test_precise, precise=True)
+
     # input
     age = input('AGE: ')
     ppg = input('PPG: ')
