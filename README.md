@@ -9,7 +9,7 @@ from sklearn.linear_model import LinearRegression
 train_test.csv 為訓練模型用的資料  
 players.csv 為預測球員薪水的資料，可以自行加入數據做薪水預測
 
-## 數據解釋
+## Stats Explain
 
 POS：位置  
 AGE：年紀  
@@ -32,3 +32,8 @@ TOPG (Turnovers Per Game)：場均失誤
 VI (Versatility Index)：多功能指數  
 ORTG (Offensive Rating)：進攻效率  
 DRTG (Defensive Rating)：防守效率
+
+## Data Reference
+
+[2019-2020 NBA Player Stats](https://www.nbastuffer.com/2019-2020-nba-player-stats/?fbclid=IwAR39T8Fgda17UaHTFp49NUTkxITmBVd5yR0LSpHWNSI_Rmg1IVa57yy3qg8)  
+[2020-2021 NBA Player Contracts](https://www.basketball-reference.com/contracts/players.html)
