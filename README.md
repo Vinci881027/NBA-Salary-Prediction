@@ -1,15 +1,15 @@
 # NBA-Salary-Prediction
 
-### Model
+## Model
 
 from sklearn.linear_model import LinearRegression
 
-### CSV
+## CSV
 
 train_test.csv 為訓練模型用的資料  
-players.csv 為預測球員薪水的資料
+players.csv 為預測球員薪水的資料，可以自行加入數據做薪水預測
 
-### 數據解釋
+## 數據解釋
 
 POS：位置  
 AGE：年紀  
