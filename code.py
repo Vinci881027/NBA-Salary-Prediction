@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 def load_train_test_data(train_ratio):
     data = pandas.read_csv('./train_test.csv')
-    feature_col = ['AGE', 'MIN%', 'USG%', 'TO%', 'FT%', '2P%', '3P%', 'eFG%', 'TS%',
+    feature_col = ['POS', 'AGE', 'MIN%', 'USG%', 'TO%', 'FT%', '2P%', '3P%', 'eFG%', 'TS%',
                    'PPG', 'RPG', 'TRB%', 'APG', 'AST%', 'SPG', 'BPG', 'TOPG', 'VI', 'ORTG', 'DRTG']
     label_col = ['SALARY']
     X = data[feature_col]
@@ -24,7 +24,7 @@ def load_train_test_data(train_ratio):
 
 def load_players_data():
     data = pandas.read_csv('./players.csv')
-    feature_col = ['AGE', 'MIN%', 'USG%', 'TO%', 'FT%', '2P%', '3P%', 'eFG%', 'TS%',
+    feature_col = ['POS', 'AGE', 'MIN%', 'USG%', 'TO%', 'FT%', '2P%', '3P%', 'eFG%', 'TS%',
                    'PPG', 'RPG', 'TRB%', 'APG', 'AST%', 'SPG', 'BPG', 'TOPG', 'VI', 'ORTG', 'DRTG']
     name_col = ['NAME']
     label_col = ['SALARY']
