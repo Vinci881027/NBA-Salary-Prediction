@@ -33,7 +33,7 @@ VI (Versatility Index)：多功能指數
 ORTG (Offensive Rating)：進攻效率  
 DRTG (Defensive Rating)：防守效率
 
-## Data Reference
+## References
 
 [2019-2020 NBA Player Stats](https://www.nbastuffer.com/2019-2020-nba-player-stats/?fbclid=IwAR39T8Fgda17UaHTFp49NUTkxITmBVd5yR0LSpHWNSI_Rmg1IVa57yy3qg8)  
 [2020-2021 NBA Player Contracts](https://www.basketball-reference.com/contracts/players.html)
